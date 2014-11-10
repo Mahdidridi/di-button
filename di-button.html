@@ -5,7 +5,8 @@
     Polymer({
       clickHandler: function(){
         if (this.type === 'submit'){
-          this.fire('core-signal', {name: 'submit', data: this});
+          // this.fire('core-signal', {name: 'submit', data: this});
+          this.fire('submit', this);
         }
       }
     });
